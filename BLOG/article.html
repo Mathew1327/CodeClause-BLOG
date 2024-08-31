@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning React: A Beginner's Guide</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog Platform</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../categories.html">Categories</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Learning React: A Beginner's Guide</h2>
+            <p>
+                React is a popular JavaScript library for building user interfaces, especially single-page applications. 
+                It allows developers to create large web applications that can update and render efficiently in response 
+                to data changes.
+            </p>
+
+            <h3>Getting Started with React</h3>
+            <p>To start using React, you'll need to set up your environment. Here's how you can do it:</p>
+
+            <pre><code>
+// Install Node.js and npm (Node Package Manager)
+// You can download it from https://nodejs.org/
+
+// Once Node.js is installed, create a new React project using the following command:
+npx create-react-app my-react-app
+
+// Navigate to the project directory:
+cd my-react-app
+
+// Start the development server:
+npm start
+
+// Your React app should now be running at http://localhost:3000
+            </code></pre>
+
+            <h3>Understanding React Components</h3>
+            <p>React applications are made up of components, which are like JavaScript functions. Here's an example:</p>
+
+            <pre><code>
+// A simple React component
+import React from 'react';
+
+function HelloWorld() {
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default HelloWorld;
+            </code></pre>
+
+            <p>This component returns a JSX element, which is a syntax extension that looks similar to HTML.</p>
+
+            <h3>Using Props in React</h3>
+            <p>Props are arguments passed into React components. They are used to pass data from one component to another.</p>
+
+            <pre><code>
+// A component that uses props
+function Greeting(props) {
+    return &lt;h1&gt;Hello, {props.name}!&lt;/h1&gt;;
+}
+
+// Using the Greeting component
+function App() {
+    return (
+        &lt;div&gt;
+            &lt;Greeting name="Mathew" /&gt;
+            &lt;Greeting name="React Developer" /&gt;
+        &lt;/div&gt;
+    );
+}
+            </code></pre>
+
+            <p>In the example above, the `Greeting` component receives a `name` prop and displays it inside an `h1` tag.</p>
+
+            <section class="comments">
+                <h3>Comments</h3>
+                <!-- Comments will be dynamically loaded here -->
+                <div id="comments-section"></div>
+                <form id="comment-form">
+                    <textarea id="comment-text" placeholder="Leave a comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog Platform</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

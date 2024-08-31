@@ -1,0 +1,12 @@
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
